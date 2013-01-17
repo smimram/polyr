@@ -1,0 +1,4 @@
+polyr
+=====
+
+Polygraphic rewriting
