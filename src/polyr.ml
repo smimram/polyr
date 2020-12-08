@@ -1,4 +1,4 @@
-let interactive = ref false
+let interactive = ref true
 
 exception Timeout
 
@@ -30,8 +30,8 @@ let () =
   let fname = ref None in
   Arg.parse
     [
-      "-i", Arg.Set interactive, " Interactive mode.";
-      "--interactive", Arg.Set interactive, " Interactive mode.";
+      "-b", Arg.Clear interactive, " Batch mode.";
+      "--batch", Arg.Clear interactive, " Batch mode.";
     ]
     (fun f -> fname := Some f)
     "polyr [options] [file]";

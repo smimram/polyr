@@ -9,6 +9,6 @@ OCAMLDOC = ocamldoc.opt
 OCAMLDOCFLAGS = -charset utf-8
 
 all: dnc
-	./polyr
+	./polyr test.polyr -b
 
 include OCamlMakefile
